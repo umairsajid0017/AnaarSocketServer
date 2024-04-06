@@ -5,6 +5,7 @@ const server = http.createServer((req, res) => {
     res.end('Socket.IO server is running!');
 });
 
+
 const io = socketIo(server);
 
 io.on('connection', (socket) => {
